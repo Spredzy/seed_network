@@ -1,0 +1,8 @@
+---
+- name: Hello Network
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Show it works
+      debug:
+        msg: 'Hello Networks'
