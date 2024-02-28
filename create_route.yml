@@ -1,0 +1,8 @@
+---
+- name: Create Route
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Create Route
+      debug:
+        msg: 'Creating Route: {{ seed_network_route | default ("None") }}'
